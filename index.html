@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Search Movie Title</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b988e34ec9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main id="wrapper">
+      <button id="fav_movies">
+        Favorite Movies <i class="fa-regular fa-heart"></i>
+      </button>
+      <h1>Movies</h1>
+      <form id="search_container">
+        <input
+          type="text"
+          id="search_movie_title"
+          placeholder="Search Movies..."
+          name="name"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div class="overflow top"></div>
+      <div class="overflow bottom"></div>
+      <div id="movies_list_container"></div>
+    </main>
+    <script
+      type="module"
+      src="./index.js"
+    ></script>
+  </body>
+</html>
